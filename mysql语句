@@ -1,0 +1,12 @@
+ CREATE TABLE messageboard.loginss (id int(11) NOT NULL, 
+ name varchar(45) NOT NULL, 
+ password varchar(45) NOT NULL,
+ Role int(11) default NULL, 
+ PRIMARY KEY (id) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ CREATE TABLE messageboard.messagess (id int(10) unsigned NOT NULL auto_increment,
+ Name varchar(45) NOT NULL,
+ time timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+ title varchar(45) NOT NULL, 
+ Message varchar(45) NOT NULL, 
+ PRIMARY KEY (id)) ENGINE=InnoDB AUTO_INCREMENT=1710 DEFAULT CHARSET=utf8;
+ 
